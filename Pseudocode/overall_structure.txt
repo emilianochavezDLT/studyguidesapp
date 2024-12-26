@@ -1,0 +1,18 @@
+General Structure
++--------------------------------------------------------------+
+1. User Create Questions
+2. User Gets Tested on those Questions
+    - They get tested by section
+    or
+    - Randomly
+        - They can answer IDK, or Paper Example 
+3. Then they Grade themselves by looking at the studied question. 
+    - Green for Correct
+    - Red for Wrong
+    - Yellow for Ehh(meaning that they they got it half right)
+    - Purple meaning subjective
+    - Cyan meaning they don't know (IDK)
+    - Blue for Paper (Detailed) example
+4. They Get a Tally at the end showing the number of each category
+5. Repeat the process
++--------------------------------------------------------------+
