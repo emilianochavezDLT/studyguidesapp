@@ -55,6 +55,7 @@ User Gets Tested on those Questions
             - Types: STRING or TEXT
         - Study_Guide_ID (FK)
             - INT
+            - References the SG_ID in the Study Guide Table
     - Study Guide Category
         - SGC_ID (PK)
             - INT
@@ -62,7 +63,17 @@ User Gets Tested on those Questions
             - Type: STRING of maybe of 250 chars. 
     - Linking Table linking Study Guide Category and Question Table
         - Composite Key
-            - SGC_ID, Q_ID
+            - SGC_ID, Q_ID (FK)
+            - References the SGC_ID in Study Guide Category Table
+            and Q_ID in the Question Table
+    - Answer
+        - ANS_ID
+            - INT
+        - Answer
+            - Type: String of any length
+        - ANS_Q_ID (FK)
+            - INT
+            - Reference the Q_ID in the Question Table
     ---------------------------------
 
 Implmentation: 
@@ -70,8 +81,50 @@ GET the Information from the DB and display
 the corresponding study guide, categories, and questions of that 
 study guide.
 
+The user picks to randomized by:
+    - Questions
+        - But have the category go in order by alphabet
+    - Category
+        - But have question go by sequentially.  
+
 Then the user see's the category and the first question being 
-displayed.
+displayed. The user will have 3 buttons to click:
+    - Next
+    - Paper Example
+    - IDK
+    - Done
+        - Only if they have ran through the whole study guide
 +--------------------------------------------------------------+
 
 
+
+Requirement 3:
+Self Grade
++--------------------------------------------------------------+
+            How do we self grade?
+    The self grade will be just on RAM, which will be erased 
+    once the user is done answering with the study guide.
+
+Implmentation:
+The user will be able to press 6 buttons 
+
+    - Green for Correct
+    - Red for Wrong
+    - Yellow for Ehh(meaning that they they got it half right)
+    - Purple meaning subjective
+    - Cyan meaning they don't know (IDK)
+    - Blue for Paper (Detailed) example
+
++--------------------------------------------------------------+
+
+
+
+Requirement 4
+Tally
++--------------------------------------------------------------+
+                How do Tallies work?
+        Basically just tally up on how many 
+        times each button was clicked.
++--------------------------------------------------------------+
+
+Repeat 
