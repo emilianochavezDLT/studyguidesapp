@@ -43,7 +43,7 @@ User Gets Tested on those Questions
     
     ---------------------------------
     Business Reqs: 
-    - Study Guide
+    - Study_Guide
         - SG_ID (PK)
             - INT
         - Name
@@ -53,19 +53,17 @@ User Gets Tested on those Questions
             - INT
         - Question
             - Types: STRING or TEXT
-        - Study_Guide_ID (FK)
+        - SG_ID (FK)
             - INT
-            - References the SG_ID in the Study Guide Table
-    - Study Guide Category
-        - SGC_ID (PK)
+            - References the SG_ID in the Study_Guide Table
+        - CAT_ID (FK)
             - INT
-        - Category
+            - References the CAT_ID in the Category Table
+    - Category
+        - CAT_ID (PK)
+            - INT
+        - CAT_NAME
             - Type: STRING of maybe of 250 chars. 
-    - Linking Table linking Study Guide Category and Question Table
-        - Composite Key
-            - SGC_ID, Q_ID (FK)
-            - References the SGC_ID in Study Guide Category Table
-            and Q_ID in the Question Table
     - Answer
         - ANS_ID
             - INT
