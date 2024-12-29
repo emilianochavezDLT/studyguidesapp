@@ -1,0 +1,57 @@
+Headers to be Created
+
+These are the possible header files
+that must be created:
+
+    - Study Guide
+        - id: int
+        - name: String
+
+        functions:
+            - set id
+            - set name
+            - get id
+            - get name
+    
+    - Questions
+        - id: int
+        - question: String
+        - belongs_to_study_guide: int
+        - in_category: int
+
+        functions:
+            - set id
+            - set question
+            - set belongs_to_study_guide
+            - set in_category
+            - get id
+            - get question
+            - get belongs_to_study_guide
+            - get in_category
+
+    
+    - Category
+        - id: int
+        - cat_name: String
+
+        functions:
+            - set id
+            - set cat_name
+            - get id
+            - get cat_name
+    
+    - Answers
+        - id: int
+        - answer: String
+        - question_id: int
+    
+        functions:
+            - set id
+            - set answer
+            - set question_id
+            - get id
+            - get answer
+            - get question_id
+            
+
+        
