@@ -19,11 +19,6 @@ General Structure
 
 Requirements for Me:
     - Written in C++
-        - Good Practice
     - Must have a GUI
-        - Its nice to have
-        - Could be Implemented in Javascript
-        - Explore more
-        ! Processing must be done in C++
-            - Information could be sent through a server
-            just for the GUI. 
+        - Made in C++ preferrably
+        
